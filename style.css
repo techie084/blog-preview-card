@@ -1,0 +1,130 @@
+:root {
+  /* Primary color */
+  --Yellow: hsl(47, 88%, 63%);
+  /* Neutral color */
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+
+  /* font-size */
+  --Font-size: 16px;
+}
+/* importing font */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 90vh;
+  font-family: "Figtree", sans-serif;
+  overflow: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Yellow);
+}
+
+.card-container {
+  margin: 20px;
+  background-color: var(--White);
+  text-align: center;
+  padding: 10px;
+  border-radius: 17px;
+  justify-content: center;
+  height: auto;
+  max-width: 380px;
+  box-shadow: 10px 8px black;
+  border: 1px solid black;
+}
+
+#img {
+  border-radius: 13px;
+  margin: 12px 0;
+}
+
+button {
+  background-color: var(--Yellow);
+  border: none;
+  color: var(--Black);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+p {
+  text-align: left;
+  margin: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: left;
+  margin: 12px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  &:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+  }
+}
+.paragraph {
+  text-align: left;
+  margin: 12px;
+  color: var(--Grey);
+  font-weight: 500;
+}
+
+.down {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  p {
+    margin: 15px 10px;
+  }
+}
+
+/* footer section */
+.attribution {
+  position: fixed;
+  right: 0;
+  left: 0;
+  color: var(--Grey-900);
+  bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+  color: var(--Black);
+  a {
+    text-decoration: none;
+    color: var(--White);
+  }
+}
+
+/* mobile design */
+@media screen and (max-width: 375px) {
+  .card-container {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 10px;
+    width: 359px;
+    height: auto;
+    justify-content: center;
+    overflow: auto;
+    border-radius: 20px;
+  }
+}
