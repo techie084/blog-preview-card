@@ -19,10 +19,10 @@
 }
 
 body {
-  margin: 0;
-  height: 90vh;
+  /* margin: 0; */
+  height: 100vh;
   font-family: "Figtree", sans-serif;
-  overflow: auto;
+  /* overflow: auto; */
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -39,8 +39,8 @@ body {
   justify-content: center;
   height: auto;
   max-width: 380px;
-  box-shadow: 10px 8px black;
-  border: 1px solid black;
+  box-shadow: 10px 8px var(--Black);
+  border: 1px solid var(--Black);
 }
 
 #img {
@@ -49,6 +49,7 @@ body {
 }
 
 button {
+  width: 100px;
   background-color: var(--Yellow);
   border: none;
   color: var(--Black);
@@ -105,7 +106,7 @@ h2 {
   left: 0;
   color: var(--Grey-900);
   bottom: 1rem;
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
   color: var(--Black);
   a {
@@ -115,7 +116,7 @@ h2 {
 }
 
 /* mobile design */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .card-container {
     display: flex;
     flex-flow: column wrap;
